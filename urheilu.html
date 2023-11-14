@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tietovisa</title>
+    <script src="js/urheilu.js">
+    </script>
+    <link href="css/styles.css" rel="stylesheet">
+
+
+</head>
+
+<body onload="onClick()">
+    <section>
+        <h1>Tietovisa</h1>
+        <hr>
+        <h2>Valitse kategoria</h2>
+
+        <nav class="sivulinkit">
+            <a href="musiikki.html">Musiikki</a>
+            <a href="urheilu.html">Urheilu</a>
+            <a href="kirjallisuus.html">Kirjallisuus</a>
+        </nav>
+
+    </section>
+
+    <section>
+        <div id="quiz">
+            <h3 id="questionCounter"></h3>
+            <h2 id="kysymys"></h2>
+            <h3 id="question">Valitse oikea vaihtoehto</h3>
+
+            <div id="vastaukset">
+                <script src="urheilu.js" defer></script>
+                <input type="radio" name="answer" class="answer" id="a"></input>
+                <label for="a" id="aText"></label>
+                <br>
+                <input type="radio" name="answer" class="answer" id="b"></input>
+                <label for="b" id="bText"></label>
+                <br>
+                <input type="radio" name="answer" class="answer" id="c"></input>
+                <label for="c" id="cText"></label></li>
+                <br>
+                <input type="radio" name="answer" class="answer" id="d"></input>
+                <label for="d" id="dText"></label>
+                <br>
+                <p id="palaute"></p>
+            </div>
+
+            <button id="button" onclick="onClick()">Seuraava</button>
+
+        </div>
+    </section>
+</body>
+<footer>&copy;Aapo Rissanen</footer>
+</html>
